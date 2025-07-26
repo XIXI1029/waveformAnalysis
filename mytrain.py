@@ -8,7 +8,7 @@ def main():
 
     # 训练模型
     results = model.train(
-        data='D:\\project\\yolov10-main\\ultralytics\\cfg\\datasets\\waveform.yaml',
+        data='datasets/waveform.yaml',
         epochs=75,
         imgsz=640
     )
