@@ -12,14 +12,11 @@ This project implements **YOLOv8-based deep learning** for ventilator waveform a
 - **Data Preprocessing**  
   Raw waveform images are processed through NanoDet-Plus for region extraction and Hough-based skew correction for improved label quality and generalization.
 
-- **Optimized Training**  
-  - **Dataset**: 2,865 labeled waveform images  
+- **Optimized Training**
   - **mAP@50**: 99.2%  
-  - **mAP@50-95**: 88%  
-  - Advanced data augmentation (horizontal flip, HSV perturbation, mosaic augmentation, etc.)
+  - **mAP@50-95**: 88%
 
-- **Real-time Inference**  
-  - Model exported to **ONNX** format for CPU inference with OpenCV DNN.  
+- **Real-time Inference**
   - Average inference time: **271 ms** (total pipeline latency < 500 ms).  
   - Suitable for real-time anomaly monitoring.
 
@@ -109,8 +106,7 @@ The model’s decision-making process is visualized with **Grad-CAM**, highlight
 
 - **Industrial PC**: Intel N100, 16GB RAM.  
 - **Camera**: 2K auto-focus, USB interface.  
-- **Display**: 7-inch touchscreen (HDMI).  
-- **Inference**: OpenCV DNN with ONNX model (CPU-only).
+- **Display**: 7-inch touchscreen (HDMI).
 
 ---
 
